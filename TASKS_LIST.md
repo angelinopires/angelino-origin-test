@@ -9,6 +9,7 @@
 - [x] Config commitlint and git hooks
 - [x] Config the project structure
 - [x] Config the Design System
+- [x] Config the tests
 
 ## 👨‍💻 Coding
 - [ ] Write the overall structure

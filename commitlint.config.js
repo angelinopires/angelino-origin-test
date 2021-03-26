@@ -17,10 +17,8 @@ module.exports = {
         'refactor',
         'revert',
         'style',
-        'test'
-      ]
-    ]
-  }
-};
-
-
+        'test',
+      ],
+    ],
+  },
+}

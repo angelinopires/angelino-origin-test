@@ -1,0 +1,46 @@
+/* Design System Variables */
+
+$blueGray100: #CBD5DC;
+$blueGray400: #708797;
+$blueGray600: #4D6475;
+$blueGray900: #1E2A32;
+
+$neutralWhite: #FFF;
+
+// Background colors
+$neutralBackground: #E5E5E5;
+
+// Brand colors
+$brandColorPrimary: #1B31A8;
+$brandColorSecondary: #0079FF;
+
+// Font colors
+$fontColorHighEmphasis: $blueGray900;
+$fontColorMediumEmphasis: $blueGray600;
+$fontColorLowEmphasis: $blueGray400;
+$fontColorNegative: $neutralWhite;
+
+// Shadow
+$shadowLevel4: 0px 16px 32px rgba($blueGray900, 0.08);
+
+// Border
+$borderRadiusPill: 32px;
+
+// Typography
+$fontFamily01: 'Rubik';
+$fontFamily02: 'Work Sans';
+
+$fontWeightRegular: 'normal';
+$fontWeightMedium: 500;
+$fontWeightSemibold: 600;
+
+$fontSizeUltraSmall: 12px;
+$fontSizeHyperSmall: 14px;
+$fontSizeExtraSmall: 16px;
+$fontSizeMedium: 20px;
+$fontSizeLarge: 24px;
+$fontSizeHyperLarge: 32px;
+
+$lineHeightMedium: 120%;
+$lineHeightDistant: 150%;
+

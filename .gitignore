@@ -1,5 +1,4 @@
 .cache
-.husky
 .idea/
 *.DS_Store
 coverage

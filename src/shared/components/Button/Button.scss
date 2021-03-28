@@ -1,0 +1,38 @@
+.Button {
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: $borderRadiusPill;
+  transition: $defaultTransition;
+
+  @include sub-title($fontSizeExtraSmall, $fontWeightSemibold);
+
+  &--xs {
+    height: $buttonSizeSmall;
+  }
+
+  &--md {
+    height: $buttonSizeMedium;
+  }
+
+  &--lg {
+    height: $buttonSizeLarge;
+  }
+
+  &--primary {
+    background-color: $brandColorPrimary;
+    color: $neutralWhite;
+    outline-color: transparent;
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: $blueGray50;
+      color: $blueGray200;
+    }
+
+    &:not(:disabled):hover {
+      cursor: pointer;
+      box-shadow: $shadowLevel6;
+    }
+  }
+}

@@ -12,7 +12,7 @@
 - [x] Config the tests
 
 ## 👨‍💻 Coding
-- [ ] Write the overall structure
+- [x] Write the overall structure
 - [ ] Add styles and interactions
 - [ ] Add logic and business rules
 - [ ] Write unit tests for each component or service

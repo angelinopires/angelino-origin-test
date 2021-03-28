@@ -3,6 +3,7 @@
 $blueGray50: #E9EEF2;
 $blueGray100: #CBD5DC;
 $blueGray200: #ABB8C2;
+$blueGray300: #8A9CA9;
 $blueGray400: #708797;
 $blueGray600: #4D6475;
 $blueGray900: #1E2A32;
@@ -41,7 +42,7 @@ $insetSuperSmall: 16px;
 $insetLarge: 40px;
 
 // Transition
-$defaultTransition: 250ms linear;
+$defaultTransitionType: cubic-bezier(0.67, 0.09, 0.3, 0.91);;
 
 // Typography
 $fontFamily01: 'Rubik', sans-serif;

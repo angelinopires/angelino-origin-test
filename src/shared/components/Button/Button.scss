@@ -3,7 +3,7 @@
   text-align: center;
   border: none;
   border-radius: $borderRadiusPill;
-  transition: $defaultTransition;
+  transition: 200ms $defaultTransitionType;
 
   @include sub-title($fontSizeExtraSmall, $fontWeightSemibold);
 

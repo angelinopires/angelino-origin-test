@@ -1,0 +1,22 @@
+.Input {
+  position: relative;
+
+  &__field {
+    display: block;
+
+    @include input();
+  }
+
+  &--withLeftIcon {
+    .Input__field {
+      padding-left: $insetLarge;
+    }
+
+    svg {
+      position: absolute;
+      top: 16px;
+      left: 12px;
+      color: $blueGray100;
+    }
+  }
+}

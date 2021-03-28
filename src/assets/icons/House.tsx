@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 // TYPES
 import { IconSvgProps } from '~/shared/types'

@@ -1,6 +1,8 @@
 /* Design System Variables */
 
+$blueGray50: #E9EEF2;
 $blueGray100: #CBD5DC;
+$blueGray200: #ABB8C2;
 $blueGray400: #708797;
 $blueGray600: #4D6475;
 $blueGray900: #1E2A32;
@@ -14,6 +16,16 @@ $neutralBackground: #F4F8FA;
 $brandColorPrimary: #1B31A8;
 $brandColorSecondary: #0079FF;
 
+// Border
+$neutralBorder: $blueGray50;
+$borderRadiusSmall: 8px;
+$borderRadiusPill: 32px;
+
+// Button
+$buttonSizeSmall: 40px;
+$buttonSizeMedium: 56px;
+$buttonSizeLarge: 64px;
+
 // Font colors
 $fontColorHighEmphasis: $blueGray900;
 $fontColorMediumEmphasis: $blueGray600;
@@ -22,9 +34,14 @@ $fontColorNegative: $neutralWhite;
 
 // Shadow
 $shadowLevel4: 0px 16px 32px rgba($blueGray900, 0.08);
+$shadowLevel6: 0px 12px 48px rgba($blueGray900, 0.12);
 
-// Border
-$borderRadiusPill: 32px;
+// Spacing
+$insetSuperSmall: 16px;
+$insetLarge: 40px;
+
+// Transition
+$defaultTransition: 250ms linear;
 
 // Typography
 $fontFamily01: 'Rubik', sans-serif;
@@ -45,6 +62,3 @@ $fontSizeHyperLarge: 32px;
 $lineHeightMedium: 120%;
 $lineHeightDistant: 150%;
 
-// Spacing
-$insetSuperSmall: 16px;
-$insetLarge: 40px;

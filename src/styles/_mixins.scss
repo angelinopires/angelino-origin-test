@@ -1,0 +1,13 @@
+@mixin sub-title($size, $weight: $fontWeightRegular, $line-height: $lineHeightMedium) {
+  font-family: $fontFamily02;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin heading($size, $weight: $fontWeightMedium) {
+  font-family: $fontFamily01;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeightMedium;
+}

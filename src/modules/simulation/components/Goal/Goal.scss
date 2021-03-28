@@ -1,0 +1,19 @@
+.Goal {
+  align-items: center;
+  display: grid;
+  gap: $insetSuperSmall;
+  grid-template-columns: 64px 1fr;
+  grid-template-rows: 1fr;
+
+  &__name {
+    @include heading($fontSizeMedium);
+
+    color: $fontColorHighEmphasis;
+  }
+
+  &__description {
+    @include sub-title($fontSizeHyperSmall, $fontWeightRegular, $lineHeightDistant);
+
+    color: $fontColorLowEmphasis;
+  }
+}

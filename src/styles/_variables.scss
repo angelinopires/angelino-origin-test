@@ -8,7 +8,7 @@ $blueGray900: #1E2A32;
 $neutralWhite: #FFF;
 
 // Background colors
-$neutralBackground: #E5E5E5;
+$neutralBackground: #F4F8FA;
 
 // Brand colors
 $brandColorPrimary: #1B31A8;
@@ -27,16 +27,17 @@ $shadowLevel4: 0px 16px 32px rgba($blueGray900, 0.08);
 $borderRadiusPill: 32px;
 
 // Typography
-$fontFamily01: 'Rubik';
-$fontFamily02: 'Work Sans';
+$fontFamily01: 'Rubik', sans-serif;
+$fontFamily02: 'Work Sans', sans-serif;
 
-$fontWeightRegular: 'normal';
+$fontWeightRegular: normal;
 $fontWeightMedium: 500;
 $fontWeightSemibold: 600;
 
 $fontSizeUltraSmall: 12px;
 $fontSizeHyperSmall: 14px;
 $fontSizeExtraSmall: 16px;
+$fontSizeSmall: 18px;
 $fontSizeMedium: 20px;
 $fontSizeLarge: 24px;
 $fontSizeHyperLarge: 32px;
@@ -44,3 +45,6 @@ $fontSizeHyperLarge: 32px;
 $lineHeightMedium: 120%;
 $lineHeightDistant: 150%;
 
+// Spacing
+$insetSuperSmall: 16px;
+$insetLarge: 40px;

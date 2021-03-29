@@ -1,9 +1,19 @@
 import React from 'react'
 
+// COMPONENTS
+import { SimulationCard } from '~/modules/simulation/components'
+import { Navbar } from '~/shared/components'
+
 // STYLES
 import './App.scss'
-import '~/styles/global.scss'
 
 export const App = (): JSX.Element => {
-  return <main className="main">Origin Frontend Take Home</main>
+  return (
+    <>
+      <Navbar />
+      <div className="wrapper">
+        <SimulationCard />
+      </div>
+    </>
+  )
 }

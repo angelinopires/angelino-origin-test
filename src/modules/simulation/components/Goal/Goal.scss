@@ -6,14 +6,22 @@
   grid-template-rows: 1fr;
 
   &__name {
+    color: $fontColorHighEmphasis;
+
     @include heading($fontSizeMedium);
 
-    color: $fontColorHighEmphasis;
+    @media screen and (min-width: $notebookLandscape) {
+      @include heading($fontSizeLarge);
+    }
   }
 
   &__description {
+    color: $fontColorLowEmphasis;
+
     @include sub-title($fontSizeHyperSmall, $fontWeightRegular, $lineHeightDistant);
 
-    color: $fontColorLowEmphasis;
+    @media screen and (min-width: $notebookLandscape) {
+      @include sub-title($fontSizeExtraSmall, $fontWeightRegular, $lineHeightDistant);
+    }
   }
 }

@@ -1,5 +1,6 @@
 /* Design System Variables */
 
+$blueGray10: #F4F8FA;
 $blueGray50: #E9EEF2;
 $blueGray100: #CBD5DC;
 $blueGray200: #ABB8C2;
@@ -16,6 +17,9 @@ $neutralBackground: #F4F8FA;
 // Brand colors
 $brandColorPrimary: #1B31A8;
 $brandColorSecondary: #0079FF;
+
+// Breakpoints
+$notebookLandscape: 992px;
 
 // Border
 $neutralBorder: $blueGray50;

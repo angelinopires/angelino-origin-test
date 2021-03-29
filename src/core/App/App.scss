@@ -1,3 +1,14 @@
-.main {
-  border: 2px solid red;
+$navbar-height: 56px;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: $blueGray10;
+  min-height: calc(100vh - #{$navbar-height});
+
+  @media screen and (min-width: $notebookLandscape) {
+    $navbar-height: 80px;
+
+    min-height: calc(100vh - #{$navbar-height});
+  }
 }

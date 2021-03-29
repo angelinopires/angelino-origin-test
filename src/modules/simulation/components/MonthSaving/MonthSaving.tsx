@@ -1,5 +1,8 @@
 import React from 'react'
 
+// STYLES
+import './MonthSaving.scss'
+
 // TYPES
 import { MonthSavingProps as Props } from './types'
 

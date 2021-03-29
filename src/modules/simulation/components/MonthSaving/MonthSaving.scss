@@ -1,0 +1,46 @@
+.MonthSaving {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  border: 1px solid $neutralBorder;
+  border-radius: $borderRadiusSmall;
+
+  &__header,
+  &__caption {
+    padding: 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $fontColorHighEmphasis;
+
+    @include sub-title($fontSizeSmall);
+
+    @media screen and (min-width: $notebookLandscape) {
+      @include sub-title($fontSizeSmall);
+    }
+  }
+
+  &__money {
+    color: $brandColorSecondary;
+
+    @include heading($fontSizeLarge);
+
+    @media screen and (min-width: $notebookLandscape) {
+      @include heading($fontSizeHyperLarge);
+    }
+  }
+
+  &__caption {
+    @include sub-title($fontSizeUltraSmall);
+
+    background-color: $blueGray10;
+    color: $fontColorHighEmphasis;
+    text-align: center;
+  }
+}

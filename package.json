@@ -4,9 +4,10 @@
   "description": "Angelino Oliveira - Origin test",
   "main": "src/index.ts",
   "dependencies": {
-    "react": "^17.0.2",
+    "moment": "^2.29.1",
+    "react": "^16.14.0",
     "react-datepicker": "^3.6.0",
-    "react-dom": "^17.0.2"
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",

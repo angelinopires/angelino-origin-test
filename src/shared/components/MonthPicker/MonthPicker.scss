@@ -1,0 +1,70 @@
+.react-datepicker-wrapper {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.MonthPicker {
+  position: relative;
+
+  @include input();
+
+  &__date,
+  .arrow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $fontColorHighEmphasis;
+
+    @include sub-title($fontSizeExtraSmall);
+  }
+
+  .arrow {
+    width: 48px;;
+    color: $blueGray300;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    z-index: 1;
+
+    &:focus {
+      background: transparent;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--right {
+      transform: rotateY(180deg);
+      left: auto;
+      right: 0;
+    }
+
+    &:disabled {
+      opacity: .6;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+
+    svg {
+      max-width: 24px;
+      max-height: 24px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+

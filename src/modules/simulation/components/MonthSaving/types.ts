@@ -1,6 +1,6 @@
 export interface MonthSavingProps {
   amountOfMonths: number
   goalDate: string
-  moneyPerMonth: number
+  moneyPerMonth: string
   totalSaved: string
 }

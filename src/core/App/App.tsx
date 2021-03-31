@@ -1,8 +1,8 @@
 import React from 'react'
 
 // COMPONENTS
-import { SimulationCard } from '~/modules/simulation/components'
 import { Navbar } from '~/shared/components'
+import { SimulationCard } from '~/modules/simulation/components'
 
 // STYLES
 import './App.scss'

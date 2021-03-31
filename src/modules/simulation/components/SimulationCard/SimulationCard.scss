@@ -1,0 +1,59 @@
+.SimulationCard {
+  margin-top: 32px;
+  max-width: 560px;
+
+  @media screen and (min-width: $notebookLandscape) {
+    margin-top: 48px;
+  }
+
+  .title {
+    color: $brandColorPrimary;
+    text-align: center;
+
+    @include sub-title($fontSizeSmall);
+
+    @media screen and (min-width: $notebookLandscape) {
+      @include sub-title($fontSizeMedium);
+    }
+  }
+
+  .card {
+    background-color: $neutralWhite;
+    box-shadow: $shadowLevel4;
+    margin-top: 24px;
+    padding: 24px;
+    padding-bottom: $insetLarge;
+    width: 100%;
+
+    &__body {
+      margin: 24px 0;
+    }
+
+    &__wrapper {
+      display: grid;
+      gap: 16px;
+
+      @media screen and (min-width: $notebookLandscape) {
+        display: flex;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.formGroup {
+  &__label {
+    color: $fontColorHighEmphasis;
+    margin-bottom: 4px;
+
+    @include sub-title($fontSizeUltraSmall, $fontWeightRegular, $lineHeightDistant);
+
+    @media screen and (min-width: $notebookLandscape) {
+      @include sub-title($fontSizeHyperSmall, $fontWeightRegular, $lineHeightDistant);
+    }
+  }
+}

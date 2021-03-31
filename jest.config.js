@@ -1,16 +1,18 @@
 module.exports = {
-  roots: ['<rootDir>/src'],
+  bail: 1,
   collectCoverage: true,
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
-  },
-  moduleDirectories: ['node_modules', 'src'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  moduleDirectories: ['node_modules', '<rootDir>/src'],
+  moduleFileExtensions: ['tsx', 'ts', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
-    '.+\\.scss$': '<rootDir>/tests/styleMock.ts',
+    '.+\\.scss$': '<rootDir>/__mocks__/styleMock.ts',
   },
   preset: 'ts-jest',
+  roots: ['<rootDir>/src'],
   setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
-  testRegex: '.(test|spec).(jsx?|tsx?)$',
   testPathIgnorePatterns: ['/node_modules/'],
+  testRegex: '.(test|spec).(jsx?|tsx?)$',
+  transform: {
+    '^.+\\.(js|ts)x?$': 'ts-jest',
+  },
+  verbose: true,
 }

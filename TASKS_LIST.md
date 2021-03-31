@@ -13,8 +13,8 @@
 
 ## 👨‍💻 Coding
 - [x] Write the overall structure
-- [ ] Add styles and interactions
-- [ ] Add logic and business rules
+- [x] Add styles and interactions
+- [x] Add logic and business rules
 - [ ] Write unit tests for each component or service
 
 ## 🎊 After party

@@ -19,7 +19,7 @@ export const CurrencyInput = ({ className, leftIcon, ...rest }: Props): JSX.Elem
       <NumberFormat
         allowNegative={false}
         className="Input__field"
-        decimalScale={0}
+        decimalScale={2}
         displayType="input"
         maxLength={15}
         thousandSeparator={true}

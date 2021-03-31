@@ -16,7 +16,7 @@ export const MonthSaving = ({
     <div className="MonthSaving">
       <div className="MonthSaving__header">
         <h3 className="MonthSaving__title">Monthly amount</h3>
-        <span className="MonthSaving__money">${moneyPerMonth}</span>
+        <span className="MonthSaving__money">{moneyPerMonth}</span>
       </div>
 
       <p className="MonthSaving__caption">

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import moment from 'moment'
 
 // ASSETS
@@ -48,14 +48,9 @@ export const SimulationCard = (): JSX.Element => {
     return formatToCurrency(moneyPerMonth, _locale)
   }
 
-  const monthSaving = (
-    <MonthSaving
-      amountOfMonths={_getNumberOfMonths()}
-      goalDate={_getFormatedDate()}
-      moneyPerMonth={_getMoneyPerMonth()}
-      totalSaved={savingMoney?.formattedValue || '0'}
-    />
-  )
+  const _handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
+    event.preventDefault()
+  }
 
   return (
     <div className="SimulationCard">
@@ -63,7 +58,7 @@ export const SimulationCard = (): JSX.Element => {
         Let&#39;s plan your <strong>saving goal</strong>.
       </h2>
 
-      <form className="card">
+      <form className="card" onSubmit={_handleSubmit}>
         <div className="card__header">
           <Goal icon={<House />} name="Buy a house" />
         </div>
@@ -73,6 +68,7 @@ export const SimulationCard = (): JSX.Element => {
             <div className="formGroup">
               <label className="formGroup__label">Total amount</label>
               <CurrencyInput
+                autoFocus
                 leftIcon={<Dollar />}
                 onValueChange={(values) => setSavingMoney(values)}
                 required
@@ -91,7 +87,12 @@ export const SimulationCard = (): JSX.Element => {
             </div>
           </div>
 
-          {monthSaving}
+          <MonthSaving
+            amountOfMonths={_getNumberOfMonths()}
+            goalDate={_getFormatedDate()}
+            moneyPerMonth={_getMoneyPerMonth()}
+            totalSaved={savingMoney?.formattedValue || '0'}
+          />
         </div>
 
         <div className="Card__footer">

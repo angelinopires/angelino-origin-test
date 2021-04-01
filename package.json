@@ -44,7 +44,7 @@
   "scripts": {
     "build:dev": "parcel build ./src/index.html --no-minify --public-url ./",
     "build": "parcel build ./src/index.html --public-url ./",
-    "clean": "sudo rm -rf ./nodu_modules .cache package-lock.json",
+    "clean": "sudo rm -rf ./nodu_modules .cache",
     "lint": "eslint './src/**/*.{ts,tsx}' --quiet",
     "prebuild:dev": "shx rm -rf dist/*",
     "prebuild": "shx rm -rf dist/*",

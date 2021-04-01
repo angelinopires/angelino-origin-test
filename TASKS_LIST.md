@@ -15,9 +15,9 @@
 - [x] Write the overall structure
 - [x] Add styles and interactions
 - [x] Add logic and business rules
-- [ ] Write unit tests for each component or service
+- [x] Write unit tests for each component or service
 
 ## 🎊 After party
-- [ ] Add Favicon and metadatas
-- [ ] Write a detailed README
-- [ ] Deploy the project to a public address
+- [x] Add Favicon and metadatas
+- [x] Write a detailed README
+- [x] Deploy the project to a public address

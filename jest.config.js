@@ -13,7 +13,7 @@ module.exports = {
   roots: [
     "<rootDir>/src"
   ],
-  setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/tests-setup.ts'],
   testRegex: '.(test|spec).(jsx?|tsx?)$',
   transform: {
     '^.+\\.(js|ts)x?$': 'ts-jest',

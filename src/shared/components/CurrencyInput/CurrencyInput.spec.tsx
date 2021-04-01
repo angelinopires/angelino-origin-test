@@ -11,6 +11,8 @@ const setupComponent = (props: CurrencyInputProps): ReactWrapper => {
 describe('CurrencyInput', (): void => {
   const component = setupComponent({ value: 1000000 })
 
+  afterAll(() => component.unmount())
+
   describe('When the value property is provided', (): void => {
     it('should render the component', (): void => {
       expect(component.find('.Input').exists()).toBeTruthy()

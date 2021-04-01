@@ -21,7 +21,7 @@
     @include sub-title($fontSizeHyperSmall, $fontWeightRegular, $lineHeightDistant);
 
     @media screen and (min-width: $notebookLandscape) {
-      @include sub-title($fontSizeExtraSmall, $fontWeightRegular, $lineHeightDistant);
+      font-size: $fontSizeExtraSmall;
     }
   }
 }

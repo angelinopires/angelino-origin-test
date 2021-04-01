@@ -10,7 +10,7 @@ import { CurrencyInputProps as Props } from './types'
 
 export const CurrencyInput = ({ className, leftIcon, ...rest }: Props): JSX.Element => {
   const inputClasses = classNames('Input', className, {
-    ['Input--withLeftIcon']: leftIcon,
+    ['Input--withLeftIcon']: !!leftIcon,
   })
 
   return (

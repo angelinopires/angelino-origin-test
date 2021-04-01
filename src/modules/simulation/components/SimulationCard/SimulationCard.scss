@@ -13,17 +13,18 @@
     @include sub-title($fontSizeSmall);
 
     @media screen and (min-width: $notebookLandscape) {
-      @include sub-title($fontSizeMedium);
+      font-size: $fontSizeMedium;
     }
   }
 
   .card {
-    background-color: $neutralWhite;
-    box-shadow: $shadowLevel4;
+    width: 100%;
     margin-top: 24px;
     padding: 24px;
     padding-bottom: $insetLarge;
-    width: 100%;
+    background-color: $neutralWhite;
+    box-shadow: $shadowLevel4;
+    border-radius: $borderRadiusSmall;
 
     &__body {
       margin: 24px 0;
@@ -31,7 +32,7 @@
 
     &__wrapper {
       display: grid;
-      gap: 16px;
+      gap: $insetSuperSmall;
 
       @media screen and (min-width: $notebookLandscape) {
         display: flex;
@@ -48,12 +49,12 @@
 .formGroup {
   &__label {
     color: $fontColorHighEmphasis;
-    margin-bottom: 4px;
+    margin-bottom: $stackQuark;
 
     @include sub-title($fontSizeUltraSmall, $fontWeightRegular, $lineHeightDistant);
 
     @media screen and (min-width: $notebookLandscape) {
-      @include sub-title($fontSizeHyperSmall, $fontWeightRegular, $lineHeightDistant);
+      font-size: $fontSizeHyperSmall;
     }
   }
 }

@@ -22,7 +22,7 @@
     @include sub-title($fontSizeSmall);
 
     @media screen and (min-width: $notebookLandscape) {
-      @include sub-title($fontSizeSmall);
+      font-size: $fontSizeMedium;
     }
   }
 
@@ -32,15 +32,15 @@
     @include heading($fontSizeLarge);
 
     @media screen and (min-width: $notebookLandscape) {
-      @include heading($fontSizeHyperLarge);
+      font-size: $fontSizeHyperLarge;
     }
   }
 
   &__caption {
-    @include sub-title($fontSizeUltraSmall);
-
     background-color: $blueGray10;
     color: $fontColorHighEmphasis;
     text-align: center;
+
+    @include sub-title($fontSizeUltraSmall);
   }
 }

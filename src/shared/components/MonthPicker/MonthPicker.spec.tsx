@@ -15,6 +15,7 @@ const setupComponent = (props = defaultProps): ReactWrapper => {
   return mount(<MonthPicker {...props} />)
 }
 
+
 describe('MonthPicker', (): void => {
   const component = setupComponent()
 
@@ -40,7 +41,7 @@ describe('MonthPicker', (): void => {
         const leftArrow = component.find('.arrow').at(0)
 
         leftArrow.simulate('click')
-        expect(component.prop('onChange')).not.toHaveBeenCalledTimes(1)
+        expect(component.prop('onChange')).toHaveBeenCalledTimes(0)
         expect(component.prop('selectedDate')).toBe(defaultProps.selectedDate)
       })
     })
@@ -57,8 +58,15 @@ describe('MonthPicker', (): void => {
 
       leftArrow.simulate('click')
       expect(component.prop('onChange')).toHaveBeenCalledTimes(1)
-      // const expectedResult = moment('2021-05-01T01:31:12.751Z')
-      // expect(component.prop('selectedDate')).toBe(expectedResult)
+    })
+  })
+
+  describe("When right arrow it's clicked", (): void => {
+    it('should increase one month', (): void => {
+      const rightARrow = component.find('.arrow').at(1)
+
+      rightARrow.simulate('click')
+      expect(component.prop('onChange')).toHaveBeenCalledTimes(1)
     })
   })
 })

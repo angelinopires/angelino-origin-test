@@ -69,7 +69,6 @@ export const MonthPicker = memo<Props>(function MonthPicker({
     return _windowRef.current.removeEventListener('keydown', (event: KeyboardEvent) => {
       handleKeyDown(event)
     })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
